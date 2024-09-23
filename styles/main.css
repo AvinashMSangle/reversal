@@ -1,0 +1,85 @@
+@import url("fonts.css");
+@import url("variables.css");
+@import url("utils.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--mono), monospace;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: var(--tints);
+  color: var(--shades);
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+/* Layout*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.heading::after{
+  content:"";
+  background-image: url("assets/");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.description{
+  font-size: 0.8rem;
+}
+
+.aside {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-text {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: 1px dashed black;
+}
+
+.btn-reverse {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+
+.chip{
+  color: var(--ac);
+  visibility: hidden;
+}
+
+.theme {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}

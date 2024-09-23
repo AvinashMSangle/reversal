@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reversal</title>
-</head>
-<body>
-  <h1 class="heading">Reversal • Revers Anything </h1>
-  <p class="description">insert string to reverse, can be used for things like passwords</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversal</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1 class="heading">Reversal • Revers Anything</h1>
+    <p class="description">
+      insert string to reverse, can be used for things like passwords
+    </p>
 
-  <!--input fields-->
-  <input 
-    class="input-txt"
-    type="text" 
-    placeholder="enter some text" 
-    autofocus />
+    <div class="aside">
+      <input
+        class="input-txt"
+        type="text"
+        placeholder="enter some text"
+        autofocus
+        data-input-string
+      />
 
-  <button class="btn-revesre">
-    <img src="public/refresh.svg" alt="reverse-icon">
-  </button>
+      <button class="btn-revesre">
+        <img src="public/refresh.svg" alt="reverse-icon" />
+      </button>
+    </div>
 
-  <span class="chip">copied</span>
+    <span class="chip">copied</span>
 
-  <span class="theme">
-    <img width="48" height="48" src="https://img.icons8.com/fluency/48/partly-cloudy-day.png" alt="partly-cloudy-day"/>
-  </span>
-   
-  <script src="js/main.js"></script>
-</body>
+    <span class="theme" title="Toggle Theme" height="24">
+      <img
+        width="48"
+        height="48"
+        src="https://img.icons8.com/fluency/48/partly-cloudy-day.png"
+        alt="partly-cloudy-day"
+      />
+    </span>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>
