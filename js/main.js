@@ -1,3 +1,5 @@
+import handleToggleTheme from "./handleToggleTheme.js"
+
 const inputEl = document.querySelector("[data-input-string]");
 const buttonEl = document.querySelector("[data-button-copy]");
 const chipEl = document.querySelector("[data=chip]");
@@ -26,3 +28,8 @@ inputEl.addEventListener("keypress", (event) => {
 });
 
 buttonEl.addEventListener("click", handleReverse);
+
+// ====== TOGGLE FUNCTIONALITY ======
+toggleEl.addEventListener("click",() =>{
+    handleToggleTheme();
+});
